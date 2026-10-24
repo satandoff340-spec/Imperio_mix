@@ -50,7 +50,7 @@ const uid=()=>Math.random().toString(36).slice(2,10)+Date.now().toString(36);
 const fd=d=>new Date(d).toLocaleString('pt-BR',{dateStyle:'short',timeStyle:'short'}),dk=d=>new Date(d).toLocaleDateString('sv');
 const K='nexo.v1';
 /*CLOUD*/
-const CFG={url:'https://isrttjunbsvqxaviztfi.supabase.co',key:''}; // PREENCHA com a URL e a chave publicável do seu projeto Supabase (veja LEIAME.md)
+const CFG={url:'https://isrttjunbsvqxaviztfi.supabase.co',key:'sb_publishable_DA_I2D5udYetEo9Kve7NNA_4C5qePED'}; // PREENCHA com a URL e a chave publicável do seu projeto Supabase (veja LEIAME.md)
 const sb=(CFG.url&&CFG.key&&window.supabase)?window.supabase.createClient(CFG.url,CFG.key):null;
 const DEF=()=>({store:'Minha Loja',products:[],moves:[],sales:[],seq:1});
 let S=DEF(),persist=true,ver=0,uidU=null,uemail='',sync='',saving=false,pending=false,timer=0,recovery=false;
